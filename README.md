@@ -32,6 +32,10 @@ If you have any trouble while importing, here you can find an [extended document
 3. Modify your environment to use the **access token** you've got!
 
 
+## Readwise API 
+
+[Here you can find](https://readwise.io/api_deets) some information about the endpoints and how to use them
+
 ## Feedback
 
 Feedback is really important to me. In case you found anything that could be improved, doesn't make sense or just lame, please [open an issue](https://github.com/herczogzoltan/readwise-postman/issues/new). 
