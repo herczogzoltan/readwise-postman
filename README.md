@@ -1,9 +1,9 @@
-# Readwise Postman
+# Postman collection for readwise.io
 
 The [Postman](https://www.postman.com/) collection for [readwise.io](https://readwise.io) API endpoints.
 
 
-## Install
+## Install 
 
 There is no need to install anything, we are using only the built-in functions of Postman. This repository contains 2 things:
 
