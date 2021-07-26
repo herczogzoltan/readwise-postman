@@ -1,6 +1,6 @@
 # Readwise Postman
 
-The [Postman](https://www.postman.com/) collection for [readwise.io](readwise.io) API endpoints.
+The [Postman](https://www.postman.com/) collection for [readwise.io](https://readwise.io) API endpoints.
 
 
 ## Install
