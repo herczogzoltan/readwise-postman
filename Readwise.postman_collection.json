@@ -269,6 +269,45 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Highlights Tag DETAIL",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{accessToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/highlights/:highlight_id/tags/:tag_id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"highlights",
+						":highlight_id",
+						"tags",
+						":tag_id"
+					],
+					"variable": [
+						{
+							"key": "highlight_id",
+							"value": null
+						},
+						{
+							"key": "tag_id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
