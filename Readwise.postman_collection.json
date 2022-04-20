@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "821905ec-bf00-4829-ba76-767202a9b73a",
+		"_postman_id": "8244e147-b51f-4815-850e-de03fe050262",
 		"name": "Readwise",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -225,6 +225,40 @@
 					"path": [
 						"highlights",
 						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Highlights Tags List",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{accessToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/highlights/:id/tags",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"highlights",
+						":id",
+						"tags"
 					],
 					"variable": [
 						{
