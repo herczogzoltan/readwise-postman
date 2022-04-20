@@ -32,32 +32,6 @@
 			"response": []
 		},
 		{
-			"name": "Highlights List",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Token {{accessToken}}",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{baseUrl}}/highlights",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"highlights"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Books List",
 			"request": {
 				"auth": {
@@ -78,6 +52,32 @@
 					],
 					"path": [
 						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Highlights List",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{accessToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/highlights",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"highlights"
 					]
 				}
 			},
@@ -303,6 +303,50 @@
 						{
 							"key": "tag_id",
 							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Highlights Tag CREATE",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{accessToken}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"philosophy\"\n}\n"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/highlights/:highlight_id/tags/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"highlights",
+						":highlight_id",
+						"tags",
+						""
+					],
+					"variable": [
+						{
+							"key": "highlight_id",
+							"value": ""
 						}
 					]
 				}
